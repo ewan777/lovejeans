@@ -1,0 +1,29 @@
+{
+  "name": "storefront-jeanshop",
+  "version": "1.0.0",
+  "description": "storefront child theme",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "browser-sync": "^2.18.8",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-csso": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "storefront",
+    "wordpress",
+    "gulp"
+  ],
+  "author": "paul crawford",
+  "license": "ISC"
+}

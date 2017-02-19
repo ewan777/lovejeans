@@ -1,0 +1,111 @@
+footer#colophon{
+
+  padding: 2% 0;
+  background-image: url('../img/footer-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  div.site-info{
+    text-align: center;
+    padding: 20px 10px;
+    margin: 2% 0 2% 0 !important;
+    font-size: 26px;
+    color: #444444;
+    background-color: fade-out(#ccc, 0.3);
+    @include span(first 5);
+    @include breakpoint(max-width 768px) {
+      @include span(first 8);
+      margin-bottom: 15px !important;
+      font-size: 22px;
+    }
+    @include breakpoint(max-width 480px) {
+      @include span(12);
+      margin-bottom: 70px !important;
+      font-size: 18px;
+    }
+
+  } // end site info
+
+} //end footer
+
+/*  *****Footer Widget Styles*****  */
+
+footer#colophon .col-full section.footer-widgets{
+  padding: 0;
+  border: none;
+
+  section.block aside{
+    background-color: fade-out(#ccc, 0.3);
+    padding: 10px 20px;
+    margin: 2% 0 0 0;
+    h3{
+      text-align: center;
+      color: #444444;
+      padding-bottom: 0;
+    }
+  } //end asie general styles
+
+  section.block aside#text-3{
+    color: lighten(#444444, 20%);
+  }
+
+  section.block aside#nav_menu-3{
+    div.menu-main-container{
+
+      ul#menu-main-2{
+        margin-left: 5%;
+        li{
+          &::before{
+            color: lighten(#444444, 10%);
+          }
+        }
+
+        li a{
+          color: lighten(#444444, 20%);
+          &:hover, &:focus{
+            color: lighten(#444444, 30%);
+          }
+        } //end a
+
+
+
+        li.current-menu-item a{
+            color: #444444;
+        } //end a
+
+      } //end ul
+    } // end menu container
+  } //end nav menu-2
+
+
+} //end footer widgets
+
+/*  *****Footer Widget breakpoints*****  */
+
+footer#colophon .col-full section.footer-widgets{
+
+  section.footer-widget-1{
+    @include breakpoint(max-width 768px ) {
+      @include span(12 of 12);
+    }
+  } //end widget 3
+
+  section.footer-widget-2{
+    @include breakpoint(max-width 768px ) {
+      @include span(first 6 of 12);
+    }
+    @include breakpoint(max-width 480px ) {
+      @include span(12 of 12);
+    }
+  } //end widget 2
+
+  section.footer-widget-3{
+    @include breakpoint(max-width 768px ) {
+      @include span(last 6 of 12);
+    }
+    @include breakpoint(max-width 480px ) {
+      @include span(12 of 12);
+    }
+  } //end widget 3
+
+} // end footer widgets

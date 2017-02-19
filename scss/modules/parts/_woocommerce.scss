@@ -1,0 +1,12 @@
+div#content div.col-full nav.woocommerce-breadcrumb{
+  background-color: #E3E3E3;
+
+@include breakpoint(min-width 768px) {
+
+  padding-top: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+} //end breakpoint
+
+} //end woocommerce breadcrumbs

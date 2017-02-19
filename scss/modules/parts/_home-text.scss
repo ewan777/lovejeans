@@ -1,0 +1,129 @@
+section#home-text{
+
+  @include container(100%);
+
+  div#sabai{
+    @include span(3 inside);
+    @include breakpoint(max-width 768px) {
+      @include span(6 split);
+    }
+    @include breakpoint(max-width 480px) {
+      @include span(12);
+      margin-bottom: 2%;
+    }
+    min-height: 275px;
+    padding: 20px 10px;
+    background-image: url('../img/home-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h3{
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+      background-color: fade-out(#ccc, 0.3);
+    }
+    ul{
+      list-style: none;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: fade-out(#ccc, 0.3);
+      li{
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      } //end li
+      li span {
+        font-size: 18px;
+        color: #444444;
+        &:hover, &:focus{color: lighten(#444444, 10%)}
+        i.fa{
+          font-size:24px;
+        }
+      } // end li span
+
+    } //end ul
+  }
+
+  div#welcome{
+    min-height: 275px;
+    @include breakpoint(max-width 768px) {
+      min-height: 0;
+    }
+    background-color: #F2F2F2;
+    padding: 20px;
+    border: 2px solid #FAFAFA;
+    h2{
+      text-transform: uppercase;
+      text-align: center;
+    }
+    @include span(6 inside);
+    @include breakpoint(max-width 768px) {
+      @include span(12);
+      margin-bottom: 2%;
+    }
+  } // end welcome
+
+  div#contact{
+    @include span(last 3 of 12 inside);
+    @include breakpoint(max-width 768px) {
+      @include span(6 split);
+    }
+
+    @include breakpoint(max-width 480px) {
+      @include span(12);
+    }
+    min-height: 275px;
+    padding: 20px 10px;
+
+    background-image: url('../img/home-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h3{
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+      background-color: fade-out(#ccc, 0.3);
+      }
+    ul{
+      list-style: none;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: fade-out(#ccc, 0.3);
+      li{
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      } //end li
+      li span, li a{
+        font-size: 18px;
+        font-weight: 400;
+        color: #444444;
+        &:hover, &:focus{color: lighten(#444444, 10%)}
+        i.fa {
+          font-size:24px;
+        }
+      } // end li a / li
+
+      li#pc-line span{
+        position: relative;
+        right: 2px;
+        top: 1px;
+      }
+      li#pc-line svg{
+        position: relative;
+        top: 5px;
+        height: 24px !important;
+        fill: #444444;
+      }
+
+    } // end ul
+  } // end payment
+
+} // end section home-text

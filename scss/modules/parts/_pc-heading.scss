@@ -1,0 +1,25 @@
+section.pc-heading{
+  margin-bottom: 3%;
+  @include breakpoint(max-width 480px) {
+    margin-bottom: 7%;
+  }
+
+  div.heading-holder{
+
+
+    background-color: #F2F2F2;
+    padding: 10px;
+    border: 2px solid #FAFAFA;
+
+    h1{
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+    }
+
+    p{
+      margin: 0;
+      text-align: justify;
+    }
+  } //end div holder
+} //end heading section

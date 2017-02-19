@@ -1,0 +1,23 @@
+@mixin grad{
+	background: linear-gradient(to bottom right, $nanadark, $nanacolor, $nanalight);
+}
+
+@mixin boxshad{
+	box-shadow: 1px 1px 3px lighten(#999, 15%);
+}
+
+@mixin cardshad{
+	box-shadow: 2px 2px 3px 1px lighten(#ccc, 0.5%);
+}
+
+@mixin butshad{
+	box-shadow: 2px 2px 3px lighten(#999, 10%);
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,0 +1,39 @@
+form#pc-form{
+
+  div.pc-form{
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  } //end pc-form
+
+  div.pc-form input, div.pc-form textarea{
+    border: 2px solid #00A5BF;
+  }
+  div#form-group-4 input{
+    border: none;
+  }
+
+  div.pc-form textarea{
+    width: 70%;
+    height: 125px;
+    @include breakpoint(max-width 480px) {
+      width: auto;
+    }
+  }
+
+  div#form-group-1 input, div#form-group-2 input{
+    width: 70%;
+    @include breakpoint(max-width 480px) {
+      width: auto;
+    }
+  }
+
+  div#form-group-4 input{
+    background-color: #00A5BF;
+    &:hover, &:focus{
+      background-color: darken(#00A5BF, 3%);
+    }
+  }
+
+} //end form

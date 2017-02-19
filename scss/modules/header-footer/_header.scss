@@ -1,0 +1,62 @@
+header#masthead{
+  height: auto;
+  @include breakpoint(min-width 768px) {
+    height: 275px;
+  }
+
+  background-image: url("../img/lady_header1.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3%;
+
+  @include breakpoint(max-width 480px) {
+    padding-top: 5px;
+  }
+
+} //end masthead
+
+
+header#masthead .col-full{
+
+  div.site-branding{
+    @include breakpoint(min-width 768px) {
+      @include span(6 of 12);
+    }
+    h1.site-title{
+      font-size: 32px;
+      display: block;
+      text-align: left;
+      a {
+        color: lighten(#ccc, 15%);
+        &:hover, &focus{
+          color: #ff69b4;
+        }
+      }
+      @include breakpoint(max-width 480px) {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+    } //end h1
+    p.site-description{
+      text-align: left;
+      color: lighten(#ccc, 15%) !important;
+      text-transform: uppercase;
+    }
+  }
+
+  ul.site-header-cart{}
+
+  div.site-search{
+    @include span(6 of 12);
+    display: block;
+    @include breakpoint( min-width 768px) {
+      display: none;
+    }
+
+    @include breakpoint(max-width 480px) {
+      @include span(8 of 12);
+    }
+
+  } //end site site-search
+
+} // end header#masthead .col-full
