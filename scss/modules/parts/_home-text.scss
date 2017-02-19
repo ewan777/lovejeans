@@ -4,8 +4,14 @@ section#home-text{
 
   div#sabai{
     @include span(3 inside);
-    @include breakpoint(max-width 768px) {
+    @include breakpoint(993px 1200px){
+      min-height: 345px;
+    }
+    @include breakpoint(max-width 992px) {
       @include span(6 split);
+    }
+    @include breakpoint(480px 640px){
+      min-height: 290px;
     }
     @include breakpoint(max-width 480px) {
       @include span(12);
@@ -19,6 +25,7 @@ section#home-text{
     background-repeat: no-repeat;
 
     h3{
+      font-size: 22px;
       text-align: center;
       text-transform: uppercase;
       padding: 10px;
@@ -36,7 +43,8 @@ section#home-text{
         }
       } //end li
       li span {
-        font-size: 18px;
+        font-size: 14px;
+
         color: #444444;
         &:hover, &:focus{color: lighten(#444444, 10%)}
         i.fa{
@@ -49,6 +57,14 @@ section#home-text{
 
   div#welcome{
     min-height: 275px;
+    @include breakpoint(993px 1200px){
+      min-height: 345px;
+    }
+    @include breakpoint(max-width 992px) {
+      @include span(12);
+      margin-bottom: 2%;
+      margin-top: 2%;
+    }
     @include breakpoint(max-width 768px) {
       min-height: 0;
     }
@@ -60,16 +76,21 @@ section#home-text{
       text-align: center;
     }
     @include span(6 inside);
-    @include breakpoint(max-width 768px) {
-      @include span(12);
-      margin-bottom: 2%;
-    }
+
   } // end welcome
 
   div#contact{
+    @include breakpoint(993px 1200px){
+      min-height: 345px;
+    }
     @include span(last 3 of 12 inside);
-    @include breakpoint(max-width 768px) {
+
+    @include breakpoint(max-width 992px) {
       @include span(6 split);
+    }
+
+    @include breakpoint(480px 640px){
+      min-height: 290px;
     }
 
     @include breakpoint(max-width 480px) {
@@ -84,6 +105,7 @@ section#home-text{
     background-repeat: no-repeat;
 
     h3{
+      font-size: 22px;
       display: block;
       text-align: center;
       text-transform: uppercase;

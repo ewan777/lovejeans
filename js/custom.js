@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-  if ( jQuery(window).width() <= 1024 ){
+  if ( jQuery(window).width() <= 992 ){
     jQuery('#welcome').insertBefore(jQuery('#sabai'));
   }
 
@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
 
 jQuery(window).resize(function(){
 
-  if ( jQuery(window).width() <= 1024 ){
+  if ( jQuery(window).width() <= 992 ){
     jQuery('#welcome').insertBefore(jQuery('#sabai'));
   }
 

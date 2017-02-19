@@ -20,31 +20,46 @@ header#masthead .col-full{
 
   div.site-branding{
     @include breakpoint(min-width 768px) {
-      @include span(6 of 12);
+      @include span(8 of 12);
     }
-    h1.site-title{
-      font-size: 32px;
-      display: block;
+    div.site-title{
       text-align: left;
       a {
+        font-size: 30px;
         color: lighten(#ccc, 15%);
+        font-family: 'Cinzel', serif !important;
         &:hover, &focus{
           color: #ff69b4;
         }
       }
+
       @include breakpoint(max-width 480px) {
         font-size: 28px;
+        margin-bottom: 20px;
+      }
+      @include breakpoint(max-width 360px) {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      @include breakpoint(max-width 320px) {
+        font-size: 20px;
         margin-bottom: 20px;
       }
     } //end h1
     p.site-description{
       text-align: left;
+      font-family: 'Maitree', serif;
+      font-size: 18px;
       color: lighten(#ccc, 15%) !important;
-      text-transform: uppercase;
+      // text-transform: uppercase;
     }
   }
 
-  ul.site-header-cart{}
+  ul.site-header-cart{
+    @include breakpoint( max-width 992px) {
+      display: none !important;
+    }
+  }
 
   div.site-search{
     @include span(6 of 12);

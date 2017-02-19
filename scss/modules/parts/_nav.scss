@@ -1,4 +1,4 @@
-header#masthead .col-full section.storefront-primary-navigation{
+header#masthead .col-full div.storefront-primary-navigation{
   clear: both;
   background-color: transparent;
   @include breakpoint(min-width 768px) {
@@ -12,7 +12,8 @@ header#masthead .col-full section.storefront-primary-navigation{
 
   nav#site-navigation{
     @include span(9 of 12 split);
-    @include breakpoint(max-width 768px) {
+    // @include breakpoint(max-width 768px) {
+    @include breakpoint(max-width 992px) {
       @include span(12 of 12);
     };
     ul li a{
