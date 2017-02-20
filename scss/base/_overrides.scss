@@ -1,16 +1,15 @@
 body{
   background-color: #E3E3E3 !important;
 }
-
 p{
   color: darken(#ccc, 35%);
 }
-
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,span{
   font-family: 'Raleway', sans-serif;
 }
-
 a{
   transition: all 0.2s ease;
   font-family: 'Raleway', sans-serif;
 }
+
+a.add_to_cart_button{}
