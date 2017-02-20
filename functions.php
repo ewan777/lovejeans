@@ -6,10 +6,10 @@ function custom_remove_footer_credit () {
   remove_action( 'storefront_footer', 'storefront_credit', 20 );
   add_action( 'storefront_footer', 'custom_storefront_credit', 20 );
 }
-function custom_storefront_credit() { ?>
+function custom_storefront_credit() {?>
   <div class="site-info">
     <span>
-      &copy; <?php echo get_bloginfo( 'name' ) . ' ' . get_the_date( 'Y' ); ?>
+      &copy; <?php echo get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?>
     </span>
   </div><!-- .site-info -->
   <?php
