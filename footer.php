@@ -8,7 +8,7 @@
  */
 
 ?>
-		<?php get_template_part('includes/pc-pay'); ?>
+
 		</div><!-- .col-full -->
 	</div><!-- #content -->
 
